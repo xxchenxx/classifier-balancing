@@ -20,8 +20,9 @@ from run_networks import model
 import warnings
 import yaml
 from utils import source_import, get_value
-
-data_root = {'ImageNet': '/datasets01_101/imagenet_full_size/061417',
+from os.path import expanduser
+home = expanduser("~")
+data_root = {'ImageNet': os.path.join(home, 'imagenet2012'),
              'Places': '/datasets01_101/Places365/041019',
              'iNaturalist18': '/checkpoint/bykang/iNaturalist18'}
 
