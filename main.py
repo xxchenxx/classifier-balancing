@@ -22,7 +22,8 @@ import yaml
 from utils import source_import, get_value
 from os.path import expanduser
 home = expanduser("~")
-data_root = {'ImageNet': os.path.join(home, 'imagenet'),
+data_root = {#'ImageNet': os.path.join(home, 'imagenet'),
+             'ImageNet': '/ssd1/chenwy/dataset/imagenet_final',
              'Places': '/datasets01_101/Places365/041019',
              'iNaturalist18': '/checkpoint/bykang/iNaturalist18'}
 
