@@ -13,7 +13,7 @@ networks:
   classifier:
     def_file: ./models/DotProductClassifier.py
     optim_params: {lr: 0.2, momentum: 0.9, weight_decay: 0.0005}
-    params: {dataset: ImageNet_LT, feat_dim: 2048, log_dir: ./logs/ImageNet_LT/models/resnet10_shift_e90,
+    params: {dataset: ImageNet_LT, feat_dim: 512, log_dir: ./logs/ImageNet_LT/models/resnet10_shift_e90,
       num_classes: 1000, stage1_weights: false}
   feat_model:
     def_file: ./models/ResNet10Feature.py
