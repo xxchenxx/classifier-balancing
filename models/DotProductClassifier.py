@@ -24,8 +24,6 @@ class DotProduct_Classifier(nn.Module):
         # print('<DotProductClassifier> contains bias: {}'.format(bias))
         self.fc = nn.Linear(feat_dim, num_classes)
     def forward(self, x, *args):
-        print(self.fc.weight.shape)
-        print(x.shape)
         x = self.fc(x)
         return x, None
     
